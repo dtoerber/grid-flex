@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid white;
+  display: grid;
+  //   grid-template-columns: 1fr;
+  gap: 1rem;
+  overflow: hidden;
+  // grid-template-rows: 1;
+  justify-items: center;
+  @media only screen and (min-width: 960px) {
+    grid-auto-flow: column;
+  }
+}
+
+.container > * {
+  display: none;
+}
+.container > *:nth-child(-n + 3) {
+  display: block;
+}
+
+div {
+  color: white;
+  max-width: 500px;
+  min-width: 400px;
+}
